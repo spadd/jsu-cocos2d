@@ -73,3 +73,7 @@ hero->stopActionByTag(110);
 // 停止英雄的所有动作
 // hero->stopAllActions();
 ```
+# 场景切换
+```
+Director::getInstance()->replaceScene(Day_3::createScene());
+```
