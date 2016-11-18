@@ -63,6 +63,8 @@ bool Day_3::onTouchBegan(Touch* touch,Event* unused_event)
 Vec2 pos1 = touch->getLocation();  
 auto pos2 = touch->getLocationInView();  
 auto pos3 = Director::getInstance()->convertToUI(pos2);  
+// 获得前一个点坐标
+auto pos4 = touch->getPreviousLocation();  
 }
 ```
 # 停止英雄的动作
