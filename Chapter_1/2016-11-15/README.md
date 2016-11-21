@@ -24,8 +24,10 @@ Menu* menu2 = Menu::create(toggle,NULL);
 menu2->setPosition(Vec2(0,0));
 this->addChild(menu2);
 ```
-##定时器
+##定时器（构造方法一定带参数）
 ```
+// 头文件声明，定时器
+void callfunc(float d);
 // 每1秒调用一次定时器,调用5次，延时3秒
 schedule(CC_CALLBACK_1(Day_1::callfunc,this),1,5,3,"callfunc");
 unschedule("callfunc");
@@ -40,7 +42,7 @@ progress  = ProgressTimer::create(sprite);
 //progress->setType(ProgressTimer::Type::BAR);
 // 设置进度条类型为圆形进度条
 progress->setType(ProgressTimer::Type::RADIAL);
-// 缩小0.2倍
+// 缩小0.2倍(大于1是放大，小于1是缩小)
 progress->setScaleY(0.2);
 // 设置进度条的基准点（运动的中心点）
 //progress->setMidpoint(Vec2(0,0.5));

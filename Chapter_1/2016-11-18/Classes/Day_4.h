@@ -18,5 +18,13 @@ public :
 	void MosterRemove(Ref* s);
 
 	void MosterUpdate(float f);
+	// 怪物数组
+	__Array* monsterArray;
+	// 子弹数组 
+	__Array* bulltArray;
 
+	void UpdateRemove(float f);
+
+	Label* label;
+	int count;
 };
